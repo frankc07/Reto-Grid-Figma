@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #13365faf;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor{
+    width: 45vw;
+    height: 85vh;
+
+    /* border: solid 1px; */
+
+    display: grid;
+    grid-template-areas: 
+    "item-1 item-1 item-2 item-3 item-4"
+    "item-1 item-1 item-2 item-7 item-7"
+    "item-5 item-6 item-2 item-7 item-7"
+    "item-5 item-8 item-8 item-8 item-12"
+    "item-9 item-10 item-10 item-11 item-12";
+
+    gap: 10px;
+}
+
+
+.item-1{
+    grid-area: item-1;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-1.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    -webkit-box-shadow: 5px 5px 8px -4px #000000; 
+    box-shadow: 5px 5px 8px -4px #000000;
+
+    transition: 6s;
+    cursor: pointer;
+} 
+
+.item-1:hover{
+    transform: rotate(-360deg);
+
+}
+
+
+.item-2{
+    grid-area: item-2;
+    border-radius: 10px;
+
+    /* background-image: url(./Multimedia-Grid/item-2.jpeg); */
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+
+    -webkit-box-shadow: 5px -6px 8px -4px #000000; 
+    box-shadow: 5px -6px 8px -4px #000000;
+
+    transition: 2s;
+    cursor: pointer;
+    
+}
+
+.item-2:hover{
+    transition-delay: 5s;
+    background-image: url(./Multimedia-Grid/item-2.jpeg)
+    
+}
+
+.item-3{
+    grid-area: item-3;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-4{
+    grid-area: item-4;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-5{
+    grid-area: item-5;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-6{
+    grid-area: item-6;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-6.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-7{
+    grid-area: item-7;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-7.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    -webkit-box-shadow: 0px 0px 20px -3px #000000; 
+    box-shadow: 0px 0px 20px -3px #000000;
+
+    transition: 2s;
+    cursor: pointer;
+}
+
+.item-7:hover{
+    transform: translate(0, -122px);
+    
+}
+
+.item-8{
+    grid-area: item-8;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-8.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    transition: 1s;
+    cursor: pointer;
+}
+
+.item-8:hover{
+    transform: scale(1.2);
+}
+
+.item-9{
+    grid-area: item-9;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-9.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    -webkit-box-shadow: 0px 0px 27px -1px #000000; 
+    box-shadow: 0px 0px 27px -1px #000000;
+
+    transition: 2s;
+    cursor: pointer;
+}
+
+.item-9:hover{
+    border-radius: 50%;
+}
+
+.item-10{
+    grid-area: item-10;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-10.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-11{
+    grid-area: item-11;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-11.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+.item-12{
+    grid-area: item-12;
+    border-radius: 10px;
+
+    background-image: url(./Multimedia-Grid/item-12.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: inset -1px 3px 8px 5px #0f0f0f, 2px 5px 16px 0px #0B325E, 0px 0px 27px -1px rgba(0,0,0,0);
+
+    transition: 5s;
+    cursor: pointer;
+}
+
+.item-12:hover{
+    transform: translate(122px, 50px);
+}
